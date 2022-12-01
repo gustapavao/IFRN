@@ -1,0 +1,16 @@
+valor = int(input('Informe um valor:'))
+if valor < 0:
+    valor *= -1
+#Outra forma de fazer: valor = abs(valor)
+if valor != 0:
+    qtdv = 0
+    divisor = 1
+    while divisor <= valor:
+        if valor % divisor ==0:
+            print (divisor, end= ';')
+            qtdv += 1
+        divisor += 1
+if qtdv == 2:
+    print (' Primo')
+else:
+    print (' Não é primo')
