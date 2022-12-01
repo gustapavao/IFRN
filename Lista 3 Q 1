@@ -1,0 +1,8 @@
+numint = int(input('Informe o valor decimal:'))
+binario = ' '
+while numint > 0:
+    resto = numint % 2
+    numint = numint // 2
+    binario = str (resto) + binario
+
+print (binario)
